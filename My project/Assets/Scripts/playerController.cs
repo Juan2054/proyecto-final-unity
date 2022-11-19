@@ -19,7 +19,7 @@ public class playerController : MonoBehaviour
         if (Input.GetKey("right"))
         {
             gameObject.transform.Translate(speed * Time.deltaTime, 0, 0);
-            gameObject.GetComponent<SpriteRenderer>().flipX = false;
+            transform.eulerAngles = new Vector3(0, 0, 0);
             if (gameObject.GetComponent<Animator>().GetBool("jumping") == false)
             {
                 gameObject.GetComponent<Animator>().SetBool("moving", true);
@@ -27,8 +27,8 @@ public class playerController : MonoBehaviour
         }
         if(Input.GetKey("left"))
         {
-            gameObject.transform.Translate(-speed * Time.deltaTime, 0, 0);
-            gameObject.GetComponent<SpriteRenderer>().flipX = true;
+            gameObject.transform.Translate(speed * Time.deltaTime, 0, 0);
+            transform.eulerAngles = new Vector3(0, 180, 0);
             if (gameObject.GetComponent<Animator>().GetBool("jumping") == false)
             {
                 gameObject.GetComponent<Animator>().SetBool("moving", true);

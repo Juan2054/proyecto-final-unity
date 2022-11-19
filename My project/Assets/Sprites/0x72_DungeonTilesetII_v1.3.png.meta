@@ -4674,7 +4674,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_DungeonTilesetII_v1.3_217
+      name: skull
       rect:
         serializedVersion: 2
         x: 293
@@ -5382,7 +5382,6 @@ TextureImporter:
       0x72_DungeonTilesetII_v1.3_118: 1728648574
       0x72_DungeonTilesetII_v1.3_115: 1310501514
       0x72_DungeonTilesetII_v1.3_194: -1712411925
-      0x72_DungeonTilesetII_v1.3_217: 2063023778
       run3: 257137248
       0x72_DungeonTilesetII_v1.3_164: 56779737
       0x72_DungeonTilesetII_v1.3_108: 1055862384
@@ -5393,6 +5392,7 @@ TextureImporter:
       0x72_DungeonTilesetII_v1.3_239: -612279749
       idle2: -968750125
       0x72_DungeonTilesetII_v1.3_139: 1032740298
+      skull: 2063023778
       0x72_DungeonTilesetII_v1.3_214: 1312946011
       0x72_DungeonTilesetII_v1.3_114: -1624569967
       0x72_DungeonTilesetII_v1.3_176: -2071078204
