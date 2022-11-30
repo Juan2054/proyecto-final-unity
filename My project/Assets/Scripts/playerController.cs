@@ -61,6 +61,7 @@ public class playerController : MonoBehaviour
     {
         if (collision.transform.tag == "ground")
         {
+            Debug.Log("a");
             jump = true;
             jumps = 1;
             gameObject.GetComponent<Animator>().SetBool("jumping", false);
