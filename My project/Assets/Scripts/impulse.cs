@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class impulse : MonoBehaviour
 {
-    public GameObject enemy;
     public float impulso;
     public int damage;
 
@@ -25,11 +24,14 @@ public class impulse : MonoBehaviour
     {
         if (collision.CompareTag("enemy"))
         {
-            enemy.GetComponent<jumperStuff>().lifePoints = 0;
+            FindObjectOfType<jumperStuff>().lifePoints = FindObjectOfType<jumperStuff>().lifePoints - damage;
+            Destroy(gameObject);
         }
-        else if (collision.CompareTag("ground"))
+        if (collision.CompareTag("ground"))
         {
             Destroy(gameObject);
         }
     }
+
+
 }

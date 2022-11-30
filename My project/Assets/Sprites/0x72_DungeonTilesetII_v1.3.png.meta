@@ -3729,13 +3729,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_DungeonTilesetII_v1.3_180
+      name: coin3
       rect:
         serializedVersion: 2
-        x: 305
+        x: 307
         y: 232
-        width: 13
-        height: 22
+        width: 2
+        height: 7
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3876,7 +3876,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_DungeonTilesetII_v1.3_187
+      name: coin1
       rect:
         serializedVersion: 2
         x: 289
@@ -3897,7 +3897,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_DungeonTilesetII_v1.3_188
+      name: coin2
       rect:
         serializedVersion: 2
         x: 298
@@ -3918,7 +3918,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_DungeonTilesetII_v1.3_189
+      name: coin4
       rect:
         serializedVersion: 2
         x: 314
@@ -5751,6 +5751,7 @@ TextureImporter:
       0x72_DungeonTilesetII_v1.3_135: 455172019
       0x72_DungeonTilesetII_v1.3_201: 1524720634
       0x72_DungeonTilesetII_v1.3_227: 1795231908
+      coin2: -1627774290
       0x72_DungeonTilesetII_v1.3_133: 584131056
       0x72_DungeonTilesetII_v1.3_8: -1224451487
       0x72_DungeonTilesetII_v1.3_220: -1572270261
@@ -5758,7 +5759,6 @@ TextureImporter:
       0x72_DungeonTilesetII_v1.3_104: -681664931
       0x72_DungeonTilesetII_v1.3_93: -1291385492
       0x72_DungeonTilesetII_v1.3_69: 279562754
-      0x72_DungeonTilesetII_v1.3_180: 580885331
       0x72_DungeonTilesetII_v1.3_193: -674667924
       0x72_DungeonTilesetII_v1.3_18: 2128668657
       0x72_DungeonTilesetII_v1.3_110: -15577714
@@ -5894,6 +5894,7 @@ TextureImporter:
       0x72_DungeonTilesetII_v1.3_255: -2011786405
       0x72_DungeonTilesetII_v1.3_146: 2090918219
       0x72_DungeonTilesetII_v1.3_191: -15634649
+      coin3: 580885331
       0x72_DungeonTilesetII_v1.3_222: -188307961
       0x72_DungeonTilesetII_v1.3_87: 849132845
       0x72_DungeonTilesetII_v1.3_157: -565357834
@@ -5926,10 +5927,8 @@ TextureImporter:
       0x72_DungeonTilesetII_v1.3_76: -1099455011
       0x72_DungeonTilesetII_v1.3_17: -376442154
       0x72_DungeonTilesetII_v1.3_144: -1329671854
-      0x72_DungeonTilesetII_v1.3_187: -1428198668
       0x72_DungeonTilesetII_v1.3_190: -2140494909
       0x72_DungeonTilesetII_v1.3_22: 904370245
-      0x72_DungeonTilesetII_v1.3_188: -1627774290
       0x72_DungeonTilesetII_v1.3_71: 679875597
       0x72_DungeonTilesetII_v1.3_35: -756977486
       Enemy14: -252497662
