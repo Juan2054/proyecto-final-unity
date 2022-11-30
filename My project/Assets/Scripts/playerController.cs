@@ -7,6 +7,7 @@ public class playerController : MonoBehaviour
     public float speed;
     public float jumpForce;
     public int score;
+    private int jumps;
     bool jump;
     // Start is called before the first frame update
     void Start()
@@ -41,9 +42,14 @@ public class playerController : MonoBehaviour
             gameObject.GetComponent<Animator>().SetBool("moving", false);
         }
 
-        if(Input.GetKey("up") && jump)
+        if(Input.GetKeyDown("up") && jump)
         {
-            jump = false;
+            if (jumps <= 0)
+            {
+                jump = false;
+            }
+            jumps = jumps - 1;
+            gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce));
             gameObject.GetComponent<Animator>().SetBool("jumping", true);
             gameObject.GetComponent<Animator>().SetBool("moving", false);
@@ -56,6 +62,7 @@ public class playerController : MonoBehaviour
         if (collision.transform.tag == "ground")
         {
             jump = true;
+            jumps = 1;
             gameObject.GetComponent<Animator>().SetBool("jumping", false);
         }
     }
