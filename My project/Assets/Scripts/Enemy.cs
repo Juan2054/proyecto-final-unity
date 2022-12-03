@@ -60,23 +60,20 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collider)
+    private void OnCollisionEnter2D(Collision2D collider)
     {
-        if(collider.CompareTag("Player"))
-        {
-            if (collider.GetComponent<Health>() != null)
-            {
-                collider.GetComponent<Health>().Damage(damage);
-                this.GetComponent<Health>().Damage(10000);
-            }
-        }
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.transform.tag == "ground")
+        if (collider.transform.tag == "ground")
         {
             jump = true;
+        }
+
+        if (collider.collider.tag == "Player")
+        {
+            if (FindObjectOfType<Health>() != null)
+            {
+                FindObjectOfType<Health>().Damage(damage);
+                this.GetComponent<Health>().Damage(10000);
+            }
         }
     }
 }

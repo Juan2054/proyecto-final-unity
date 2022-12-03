@@ -8,11 +8,12 @@ public class playerController : MonoBehaviour
     public float jumpForce;
     public int score;
     private int jumps;
+    public int lifePoints;
     bool jump;
     // Start is called before the first frame update
     void Start()
     {
-
+        lifePoints = 2;
     }
 
     // Update is called once per frame
