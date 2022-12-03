@@ -172,9 +172,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 112
-        y: 80
+        y: 112
         width: 16
-        height: 48
+        height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -361,18 +361,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 80
-        y: 112
+        y: 48
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 697ace96ad0dd5246b833c13c65cbbc2
-      internalID: 1952137654
+      spriteID: 6e6fb6eb3d526a043b40100a4acfe21d
+      internalID: 1483006150
       vertices: []
       indices: 
       edges: []
@@ -381,9 +381,9 @@ TextureImporter:
       name: 16x16 Steel Tileset_13
       rect:
         serializedVersion: 2
-        x: 80
+        x: 96
         y: 48
-        width: 48
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -392,8 +392,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d980a17e3012c2142b6f9e2a4fa32b72
-      internalID: -1405963916
+      spriteID: 1e68ad2cc3698024d9c3260d544805ef
+      internalID: 1350256325
       vertices: []
       indices: 
       edges: []
@@ -402,9 +402,9 @@ TextureImporter:
       name: 16x16 Steel Tileset_14
       rect:
         serializedVersion: 2
-        x: 33
-        y: 0
-        width: 32
+        x: 112
+        y: 48
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -413,14 +413,56 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 308a8ddd042c4de469735d5b96bc68c5
-      internalID: 1880567840
+      spriteID: 85b0c00342af678448d330f785eec027
+      internalID: -1202057648
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
       name: 16x16 Steel Tileset_15
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 704422c388b15e04f8ca827c93a44c18
+      internalID: 650491361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Steel Tileset_16
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2207456f20dd7e42a1a290d14627281
+      internalID: 1519730171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Steel Tileset_17
       rect:
         serializedVersion: 2
         x: 65
@@ -434,14 +476,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4b3a3800a80fd44b9b7b18f2cc0655c
-      internalID: 1672762435
+      spriteID: f90bb0b670427ba4e964ab64dec8e428
+      internalID: 699580863
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 16x16 Steel Tileset_16
+      name: 16x16 Steel Tileset_18
       rect:
         serializedVersion: 2
         x: 81
@@ -455,8 +497,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ad9d9d8576518b49b13601d008d7eed
-      internalID: 955726382
+      spriteID: 26b8409cbc6f2df4eb0f3adb83b503e7
+      internalID: -1782428193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Steel Tileset_19
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15d4c8594745a564583b6838cbde55d7
+      internalID: 2136141612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Steel Tileset_20
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf3282b3915875d4ba19be5395867706
+      internalID: 1958951256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16x16 Steel Tileset_21
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dc8c7d643a9fba48af4a792d422f99c
+      internalID: -77419377
       vertices: []
       indices: 
       edges: []
@@ -472,20 +577,25 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      16x16 Steel Tileset_20: 1958951256
       16x16 Steel Tileset_11: -2095946928
-      16x16 Steel Tileset_13: -1405963916
-      16x16 Steel Tileset_14: 1880567840
-      16x16 Steel Tileset_15: 1672762435
+      16x16 Steel Tileset_13: 1350256325
+      16x16 Steel Tileset_14: -1202057648
+      16x16 Steel Tileset_15: 650491361
       16x16 Steel Tileset_9: 1559733395
+      16x16 Steel Tileset_21: -77419377
+      16x16 Steel Tileset_19: 2136141612
       16x16 Steel Tileset_3: -994680683
       16x16 Steel Tileset_4: -553272929
       16x16 Steel Tileset_2: 925471201
       16x16 Steel Tileset_1: 1693689433
       16x16 Steel Tileset_10: 1958123998
-      16x16 Steel Tileset_16: 955726382
+      16x16 Steel Tileset_16: 1519730171
       16x16 Steel Tileset_6: -1521153318
       16x16 Steel Tileset_5: -1749784043
-      16x16 Steel Tileset_12: 1952137654
+      16x16 Steel Tileset_17: 699580863
+      16x16 Steel Tileset_18: -1782428193
+      16x16 Steel Tileset_12: 1483006150
       16x16 Steel Tileset_0: -1814711388
       16x16 Steel Tileset_8: -1010752996
       16x16 Steel Tileset_7: -1796772026

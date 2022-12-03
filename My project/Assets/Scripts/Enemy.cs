@@ -16,6 +16,8 @@ public class Enemy : MonoBehaviour
     private GameObject player;
 
     public Transform playerTransform;
+
+    bool jump;
     
     // Start is called before the first frame update
     void Start()
@@ -41,22 +43,35 @@ public class Enemy : MonoBehaviour
     {
         if(transform.position.x > playerTransform.position.x)
         {
+            transform.eulerAngles = new Vector3(0, 180, 0);
             transform.position += Vector3.left * speed * Time.deltaTime;
         }
 
         if (transform.position.x < playerTransform.position.x)
         {
+            transform.eulerAngles = new Vector3(0, 0, 0);
             transform.position += Vector3.right * speed * Time.deltaTime;
+        }
+
+        if (transform.position.y < playerTransform.position.y && jump)
+        {
+            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 1000));
+            jump = false;
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collider)
+    private void OnCollisionEnter2D(Collision2D collider)
     {
-        if(collider.CompareTag("Player"))
+        if (collider.transform.tag == "ground")
         {
-            if (collider.GetComponent<Health>() != null)
+            jump = true;
+        }
+
+        if (collider.collider.tag == "Player")
+        {
+            if (FindObjectOfType<Health>() != null)
             {
-                collider.GetComponent<Health>().Damage(damage);
+                FindObjectOfType<Health>().Damage(damage);
                 this.GetComponent<Health>().Damage(10000);
             }
         }

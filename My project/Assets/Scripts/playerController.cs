@@ -8,11 +8,12 @@ public class playerController : MonoBehaviour
     public float jumpForce;
     public int score;
     private int jumps;
+    public int lifePoints;
     bool jump;
     // Start is called before the first frame update
     void Start()
     {
-
+        lifePoints = 2;
     }
 
     // Update is called once per frame
@@ -61,7 +62,6 @@ public class playerController : MonoBehaviour
     {
         if (collision.transform.tag == "ground")
         {
-            Debug.Log("a");
             jump = true;
             jumps = 1;
             gameObject.GetComponent<Animator>().SetBool("jumping", false);

@@ -24,7 +24,7 @@ public class impulse : MonoBehaviour
     {
         if (collision.CompareTag("enemy"))
         {
-            FindObjectOfType<jumperStuff>().lifePoints = FindObjectOfType<jumperStuff>().lifePoints - damage;
+            FindObjectOfType<Health>().lifePoints = FindObjectOfType<Health>().lifePoints - damage;
             Destroy(gameObject);
         }
         if (collision.CompareTag("ground"))

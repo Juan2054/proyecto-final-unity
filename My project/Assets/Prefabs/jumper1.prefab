@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4354011800421839130}
   - component: {fileID: 4354011800421839128}
   m_Layer: 0
-  m_Name: jumper
+  m_Name: jumper1
   m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

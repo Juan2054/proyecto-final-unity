@@ -9,5 +9,5 @@ public class EnemyData : ScriptableObject
     public int hp;
     public int damage;
     public float speed;
-    public float jumpForce;
+    public int jumpForce;
 }
