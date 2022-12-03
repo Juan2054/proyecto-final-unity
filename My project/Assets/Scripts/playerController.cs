@@ -56,6 +56,8 @@ public class playerController : MonoBehaviour
             gameObject.GetComponent<Animator>().SetBool("moving", false);
 
         }
+        if(Input.GetKey(KeyCode.Q))
+            Application.Quit();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

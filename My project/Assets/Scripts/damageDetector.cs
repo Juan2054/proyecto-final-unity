@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class damageDetector : MonoBehaviour
 {
-    public Rigidbody2D player;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +21,12 @@ public class damageDetector : MonoBehaviour
         if (collision.collider.tag == "enemy")
         {
             FindObjectOfType<playerController>().lifePoints = FindObjectOfType<playerController>().lifePoints - 1;
+            if (transform.rotation.y == 0)
+            {
+                gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(1000, 0));
+            }
+            else
+                gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(1000, 0));
         }
     }
 }
