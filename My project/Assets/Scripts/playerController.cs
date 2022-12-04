@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class playerController : MonoBehaviour
 {
     public float speed;
     public float jumpForce;
     public int score;
+    public TMP_Text puntos;
     private int jumps;
     public int lifePoints;
     bool jump;
@@ -19,6 +21,7 @@ public class playerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        puntos.text = score.ToString();
         if (Input.GetKey("right"))
         {
             gameObject.transform.Translate(speed * Time.deltaTime, 0, 0);
@@ -58,6 +61,8 @@ public class playerController : MonoBehaviour
         }
         if(Input.GetKey(KeyCode.Q))
             Application.Quit();
+
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
