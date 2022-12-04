@@ -6,9 +6,11 @@ public class Enemy : MonoBehaviour
 {
 
     [SerializeField]
-    private int damage = 5;
+    public int damage = 1;
     [SerializeField]
-    private float speed = 1.5f;
+    private float speed = 1;
+    [SerializeField]
+    private int health = 1;
 
     [SerializeField]
     private EnemyData data;
@@ -23,6 +25,7 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+        playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
         SetEnemyValues();
     }
 
@@ -34,7 +37,7 @@ public class Enemy : MonoBehaviour
 
     private void SetEnemyValues()
     {
-        GetComponent<Health>().SetHealth(data.hp, data.hp);
+        health = data.hp;
         damage = data.damage;
         speed = data.speed;
     }
@@ -60,20 +63,28 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    public void TakeDamage(int damagePlayer)
+    {
+        health -= damagePlayer;
+
+        if (health <= 0)
+        {
+            Die();
+        }
+    }
+
+    private void Die()
+    {
+        Debug.Log("Enemy Died");
+        Destroy(gameObject);
+    }
+    
+
     private void OnCollisionEnter2D(Collision2D collider)
     {
         if (collider.transform.tag == "ground")
         {
             jump = true;
-        }
-
-        if (collider.collider.tag == "Player")
-        {
-            if (FindObjectOfType<Health>() != null)
-            {
-                FindObjectOfType<Health>().Damage(damage);
-                this.GetComponent<Health>().Damage(10000);
-            }
         }
     }
 }
