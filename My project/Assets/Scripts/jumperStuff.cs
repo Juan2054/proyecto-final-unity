@@ -36,4 +36,11 @@ public class jumperStuff : MonoBehaviour
             jump = true;
         }
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("bullet"))
+        {
+            lifePoints = lifePoints - FindObjectOfType<impulse>().damage;
+        }
+    }
 }
