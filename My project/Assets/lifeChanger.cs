@@ -24,6 +24,7 @@ public class lifeChanger : MonoBehaviour
         if (transform.position.x <= -24)
         {
             transform.position = new Vector3(-4, 4.03299999f, 0);
+            transform.rotation = new Quaternion(0, 0, 0, 1);
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)

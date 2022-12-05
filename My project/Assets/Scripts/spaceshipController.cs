@@ -30,6 +30,9 @@ public class spaceshipController : MonoBehaviour
             gameObject.transform.Translate(-speed * Time.deltaTime, 0, 0);
         }
 
+        if (Input.GetKey(KeyCode.Escape))
+            Application.Quit();
+
         if (lifePoints < 2.5f)
         {
             minion.GetComponent<lifeChanger>().mode = true;

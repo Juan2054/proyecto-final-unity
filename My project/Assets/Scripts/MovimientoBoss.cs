@@ -8,7 +8,7 @@ public class MovimientoBoss : MonoBehaviour
     private float moveSpeed;
     private bool moveRight;
     public Transform vida;
-    private float lifePoints;
+    public float lifePoints;
     int prueba;
     // Start is called before the first frame update
     void Start()

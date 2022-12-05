@@ -700,6 +700,7 @@ GameObject:
   - component: {fileID: 1006750449}
   - component: {fileID: 1006750450}
   - component: {fileID: 1006750452}
+  - component: {fileID: 1006750456}
   - component: {fileID: 1006750451}
   - component: {fileID: 1006750453}
   - component: {fileID: 1006750454}
@@ -822,7 +823,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1006750446}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8a0d60512f1878e4991f7da46ddd2ed3, type: 3}
   m_Name: 
@@ -843,6 +844,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vida: {fileID: 1708198547}
+  lifePoints: 0
 --- !u!114 &1006750453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -887,6 +889,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1006750456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006750446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6c40f9d967e36d4f9de5278d9f524f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vida: {fileID: 1708198547}
 --- !u!1 &1082480006
 GameObject:
   m_ObjectHideFlags: 0

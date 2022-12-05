@@ -57,7 +57,7 @@ public class Controladorjugador : MonoBehaviour
             gameObject.GetComponent<Animator>().SetBool("moving", false);
 
         }
-        if (Input.GetKey(KeyCode.Q))
+        if (Input.GetKey(KeyCode.Escape))
             Application.Quit();
 
 
