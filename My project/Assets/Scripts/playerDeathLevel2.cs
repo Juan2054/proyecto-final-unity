@@ -8,7 +8,7 @@ public class playerDeathLevel2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (FindObjectOfType<playerController>().lifePoints == 0)
+        if (FindObjectOfType<Controladorjugador>().lifePoints <= 0)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }

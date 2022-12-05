@@ -20,7 +20,7 @@ public class damageDetectorlevel2 : MonoBehaviour
         if (collision.collider.tag == "enemy")
         {
 
-            FindObjectOfType<playerController>().lifePoints = FindObjectOfType<playerController>().lifePoints - FindObjectOfType<Enemy>().damage;
+            FindObjectOfType<Controladorjugador>().lifePoints = FindObjectOfType<Controladorjugador>().lifePoints - FindObjectOfType<Enemy>().damage;
             if (transform.rotation.y == 0)
             {
                 gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-1000, 0));

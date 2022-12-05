@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class playerController : MonoBehaviour
+public class Controladorjugador : MonoBehaviour
 {
     public float speed;
     public float jumpForce;
@@ -20,7 +20,6 @@ public class playerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        puntos.text = score.ToString();
         if (Input.GetKey("right"))
         {
             gameObject.transform.Translate(speed * Time.deltaTime, 0, 0);
@@ -30,7 +29,7 @@ public class playerController : MonoBehaviour
                 gameObject.GetComponent<Animator>().SetBool("moving", true);
             }
         }
-        if(Input.GetKey("left"))
+        if (Input.GetKey("left"))
         {
             gameObject.transform.Translate(speed * Time.deltaTime, 0, 0);
             transform.eulerAngles = new Vector3(0, 180, 0);
@@ -45,7 +44,7 @@ public class playerController : MonoBehaviour
             gameObject.GetComponent<Animator>().SetBool("moving", false);
         }
 
-        if(Input.GetKeyDown("up") && jump)
+        if (Input.GetKeyDown("up") && jump)
         {
             if (jumps <= 0)
             {
@@ -58,7 +57,7 @@ public class playerController : MonoBehaviour
             gameObject.GetComponent<Animator>().SetBool("moving", false);
 
         }
-        if(Input.GetKey(KeyCode.Q))
+        if (Input.GetKey(KeyCode.Q))
             Application.Quit();
 
 
@@ -74,5 +73,3 @@ public class playerController : MonoBehaviour
         }
     }
 }
-
-
